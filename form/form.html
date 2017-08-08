@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eng-ENG">
+<head>
+	<title>Учебная Форма</title>
+    <meta charset="utf-8">
+	<link href="b-form/b-form.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+<body class="g-page">
+	<form class="b-form" action="b-form/b-form.php" method="post">
+		<label for="surname-field" class="form-label">Фамилия</label>
+		<input type="text" class="input-field" id="surname-field" name="surname-field" placeholder="Ваша фамилия" required>
+		<label for="name-field" class="form-label">Имя</label>
+		<input type="text" class="input-field" id="name-field" name="name-field" placeholder="Ваше имя" required>
+		<label for="phone-field" class="form-label">Телефон</label>
+		<input type="tel" class="input-field" id="phone-field" name="phone-field" placeholder="Ваш телефон" required>
+		<label for="e-mail-field" class="form-label">E-mail</label>
+		<input type="email" class="input-field" id="e-mail-field" name="e-mail-field" placeholder="Ваш E-mail" required>
+		<label for="sex-field" class="form-label">Пол</label>
+		<select class="select-field" id="sex-field" required>
+			<option class="select-option">Мужской</option>
+			<option class="select-option">Женский</option>
+		</select>
+		<label class="occupation-block">
+			<div class="radio-occupation">
+				<div class="radio-occupation-part-1">
+					Профессия:
+				</div>
+				<div class="radio-occupation-part-2">
+					<label for="pilot-occupation-field" class="form-label">
+						<input type="radio" name="occupation" class="radio-field" value="Пилот" id="pilot-occupation-field">Пилот
+					</label>
+					<label for="attendant-occupation-field" class="form-label">
+						<input type="radio" name="occupation" class="radio-field" value="Бортпроводник" id="attendant-occupation-field">Бортпроводник
+					</label>
+					<label for="manager-occupation-field" class="form-label">
+						<input type="radio" name="occupation" class="radio-field" value="Диспетчер" id="manager-occupation-field">Диспетчер
+					</label>
+					<label for="engeneer-occupation-field" class="form-label">
+						<input type="radio" name="occupation" class="radio-field" value="Инженер" id="engeneer-occupation-field">Инженер
+					</label>
+				</div>
+			</div>
+		</label>
+		<label for="accept" class="form-label">
+			<input type="checkbox" id="accept" class="form-checkbox" required>
+			Я согласен на обработку персональных данных
+		</label>
+		<button class="submit-button">
+			Отправить
+		</button>
+	</form>
+</body>
